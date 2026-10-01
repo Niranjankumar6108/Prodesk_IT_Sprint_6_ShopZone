@@ -1,16 +1,77 @@
-# React + Vite
+# Sprint 06 - ShopZone
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React-based Single Page E-Commerce application
+built for the Prodesk Sprint 06 assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React Router
+- Home route
+- Shop route
+- Contact route
+- Dynamic product routes
+- Product details
+- DummyJSON REST API
+- Context API
+- Global shopping cart
+- Cart quantity management
+- Cart total calculation
+- localStorage persistence
+- Mock guest authentication
+- Protected checkout route
+- Responsive UI
+- Vercel deployment
 
-## React Compiler
+## Routes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+/
+ /shop
+ /product/:id
+ /contact
+ /cart
+ /login
+ /checkout
 
-## Expanding the Oxlint configuration
+## API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Products:
+
+https://dummyjson.com/products
+
+Single Product:
+
+https://dummyjson.com/products/:id
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- React Router DOM
+- Context API
+- CSS
+- DummyJSON API
+
+## State Architecture
+
+AuthProvider
+    ↓
+CartProvider
+    ↓
+App
+    ↓
+Routes
+
+## Run Locally
+
+npm install
+
+npm run dev
+
+## Production Build
+
+npm run build
+
+## Deployment
+
+The application is deployed using Vercel.
